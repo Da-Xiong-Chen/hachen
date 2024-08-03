@@ -1,29 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Hsin-An-Chen web</title>
+    <link rel="stylesheet" href="./css/introduction.css">
+    
 </head>
+
 <body>
-    <header role="banner">
-        <img id="logo-main" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/32877/logo-thing.png" width="200" alt="Logo Thing main logo">
-      <nav id="navbar-primary" class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          
-          <div class="collapse navbar-collapse" id="navbar-primary-collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
-              <li><a href="#">Link</a></li>
+    <div class="wrapper">
+        <div class="logo">Hsin-An-Chen</div>
+        <div class="menu text-right">
+            <ul>
+                <li>
+                    <a href="#myself">Myself</a>
+                </li>
+                <li>
+                    <a href="#projects">Practices</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li><li>
+                    <a href="#skills">Skills</a>
+                </li><li>
+                    <a href="#skills">Skills</a>
+                </li>
+
             </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
-      </header><!-- header role="banner" -->
+        </div>
+        <div class="clearfix"></div>
+    </div>
+
+    <!--About section starts here-->
+    <div class="myself" id="myself">
+        <div class="wrapper2">
+            <div class="card">
+                <div class="photo"></div>
+                <div class="banner"></div>
+                <ul>
+                    <li><b>陳信安</b></li>
+                    <li>HSIN-AN CHEN</li>
+                </ul>
+            </div>
+
+            <div class="col-2">
+                <br/>
+                <h1 class="about-title">哈囉 歡迎來到我的網站</h1>
+                <p class="about-subtitle">學歷:<br/>
+                    市立三重高中 <br/>
+                    淡江大學 資訊工程學系<br/>
+                    淡江大學 資訊工程學系碩士班</p>
+
+
+            </div>
+
+            <div class="clearfix">
+            </div>
+
+            
+        </div>
+    </div>
+    <!--About section ends here-->
+
+    <div class="namecard">
+
+        <div class="wave -one right"></div>
+        <div class="wave -two right"></div>
+        <div class="wave -three right"></div>
+        <div class="name">陳信安</div>
+        <p>HSIN-AN CHEN</p>
+        <p class="position">淡江大學-資訊工程學系</p>
+        <div class="intro">
+          <hr />
+          <p>
+            本人目前就讀淡江大學資訊工程學系，修習過C++、JAVA、Python、JS等語言，在校期間考過證照，領過多項獎學金，也曾經有過在外面架設網站的經驗。        
+          </p>
+
+        </div>
+      </div>
+    
+
+    <!--Projects section starts here-->
+    <div class="projects" id="projects">
+        <div class="wrapper">
+            <h1 class="text-center-non-margin">我的經歷</h1>
+            <p class="text-center">(點擊圖片可以看更多資訊!)</p>
+
+            <a href="./1/web.html">
+                <div class="col-4 project-box">
+                    <img src="images/projects/web-design.jpg" alt="fail to show" class="img-responsive"></img>
+                    <div class="project-title">
+                        網頁設計
+                    </div>
+                </div>
+            </a>
+
+            <a href="./1/scholarship.html">
+                <div class="col-4 project-box">
+                    <img src="images/projects/unity.jpg" alt="fail to show" class="img-responsive "></img>
+                    <div class="project-title">
+                        獎學金
+                    </div>
+                </div>
+            </a>
+
+            <a href="./1/work.html">
+                <div class="col-4 project-box">
+                    <img src="images/projects/web-crawler.jpg" alt="fail to show" class="img-responsive"></img>
+                    <div class="project-title">
+                        工作經驗
+                    </div>
+                </div>
+            </a>
+
+            <a href="./1/project.html">
+                <div class="col-4 project-box">
+                    <img src="images/projects/compiler.jpg" alt="fail to show" class="img-responsive"></img>
+                    <div class="project-title">
+                        大學專題
+                    </div>
+                </div>
+            </a>
+
+            <div class="clearfix"></div>
+
+            <!--分隔-->
+            <div class="separateness"></div>
+
+            <!-- <a href="../1/1/unity.html">
+                <div class="col-4 project-box">
+                    <img src="images/projects/unity.jpg" alt="fail to show" class="img-responsive"></img>
+                    <div class="project-title">
+                        Unity
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="../1/1/compiler.html">
+                <div class="col-4 project-box">
+                    <img src="images/projects/compiler.jpg" alt="fail to show" class="img-responsive"></img>
+                    <div class="project-title">
+                        Compiler
+                    </div>
+                </div>
+            </a>
+
+            <a href="../1/1/crawler.html">
+                <div class="col-4 project-box">
+                    <img src="images/projects/web-crawler.jpg" alt="fail to show" class="img-responsive"></img>
+                    <div class="project-title">
+                        Web crawler
+                    </div>
+                </div>
+            </a>
+
+            <a href="../1/1/instabot.html">
+                <div class="col-4 project-box">
+                    <img src="images/projects/bot.jpg" alt="fail to show" class="img-responsive"></img>
+                    <div class="project-title">
+                        Instagram Bot
+                    </div>
+                </div>
+            </a> -->
+
+            <div class="clearfix"></div>
+
+
+
+        </div>
+    </div>
+    <!--Projects section ends here-->
+
+    <!--Skills Section starts here-->
+    <div class="skills" id="skills">
+        <div class="wrapper margin-bottom">
+            <h1 class="text-center">證照 & 在校成績</h1>
+
+            <div class="wrapper">
+                
+    
+                <div class="col-2">
+                    <br/>
+                    <h1 class="about-title">MTA(Microsoft Technology Associate: Networking Fundamentals)</h1>
+                    <img src="images/MTA.png" alt="fail to show" class="img-responsive"></img>
+                    <br/>
+                                         
+                </div>
+
+                <div class="col-2">
+                    <br/>
+                                       
+                    <h1 class="about-title">在校成績</h1>
+                    <a href="https://drive.google.com/file/d/13fPQl28A9_TDbVZ4dyRYkTvul7D1w1Ak/view?usp=sharing">
+                        <img src="images/grades.jpg" alt="fail to show" class="img-responsive"></img>
+                    </a>   
+                </div>
+    
+                <div class="clearfix">
+                </div>
+    
+                
+            </div>
+
+            <!-- <div class="block-center">
+
+                <div class="col-3-1 text-center ">
+                    <ul>
+                        <br>
+                        <h2>Basic Coding</h2>
+                        <br>
+                        <li>C/C++/C#</li>
+                        <br>
+                        <li>python</li>
+                        <br>
+                        <li>Java</li>
+                    </ul>
+                </div>
+
+                <div class="col-3-2 text-center">
+                    <ul>
+                        <br>
+                        <h2>Web design</h2>
+                        <br>
+                        <li>HTML/CSS</li>
+                        <br>
+                        <li>Javascript</li>
+                        <br>
+                        <li>XAMPP/PHP</li>
+                        <br>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+
+                <div class="col-3-3 text-center ">
+                    <ul>
+                        <br>
+                        <h2>Linux</h2>
+                        <br>
+                        <li>Ubuntu/Redhat</li>
+                        <br>
+                        <li>Terminal command/Script</li>
+                    </ul>
+                </div>
+
+                <div class="clearfix"></div>
+            </div> -->
+
+        </div>
+    </div>
+    </div>
+
+    <!--Skills section ends here-->
+
+
 </body>
+
 </html>

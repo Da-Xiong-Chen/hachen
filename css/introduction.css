@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0; 
+} */
+
+.wrapper {
+    /*border: 1px solid red;*/
+    width: 80%;
+    margin: 0 auto;
+    padding: 2%;
+    margin: auto;
+}
+
+.separateness {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.block-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-right {
+    text-align: right;
+    
+    /*讓menu那行文字靠最右*/
+}
+
+.text-center {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 3%;
+    /*讓project那行文字靠中*/
+}
+
+.text-center-non-margin {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /*讓project那行文字靠中*/
+}
+
+.clearfix {
+    /*因為左logo和右menu共90%下一行會跑來中間這因此用clearfix來卡個位*/
+    float: none;
+    clear: both;
+}
+
+.img-responsive {
+    width: 100%/*讓整張圖佔滿那個div區塊*/
+}
+
+.col-2 {
+    /*border: 1px solid black;*/
+    
+    /*原本設50%但又有border1px兩個加起來超過100%會跑到下一行所以設小於50%*/
+    float: center;
+    text-align: center;
+    margin-right: 2%;
+}
+
+
+
+.col-3-1 {
+    /* border: 1px solid black;*/
+    width: 39%;
+    /*原本設50%但又有border1px兩個加起來超過100%會跑到下一行所以設小於50%*/
+    height: 270px;
+    float: left;
+    background-color: rgb(223, 214, 202);
+    font-size: 20px;
+}
+
+.col-3-1 ul {
+    display: inline-block;
+}
+
+.col-3-2 {
+    /* border: 1px solid black;*/
+    width: 39%;
+    /*原本設50%但又有border1px兩個加起來超過100%會跑到下一行所以設小於50%*/
+    height: 270px;
+    float: left;
+    background-color: rgb(247, 243, 213);
+    font-size: 20px;
+}
+
+.col-3-2 ul {
+    display: inline-block;
+}
+
+.col-3-3 {
+    /*border: 1px solid black;*/
+    width: 39%;
+    /*原本設50%但又有border1px兩個加起來超過100%會跑到下一行所以設小於50%*/
+    height: 270px;
+    float: left;
+    background-color: rgb(223, 214, 202);
+    font-size: 20px;
+}
+
+.col-3-3 ul {
+    display: inline-block;
+}
+
+.col-4 {
+    /*border: 1px solid black;*/
+    width: 21%;
+    /*原本設25%但又有border1px四個加起來超過100%會跑到下一行所以設小於25%*/
+    float: left;
+    margin-right: 3%;
+    margin-bottom: 2%;
+}
+
+.col-22 {
+    border: 1px solid black;
+    width: 25%;
+    float: left;
+    margin: 2%;
+}
+
+.btn {
+    background-color: blue;
+    color: white;
+    padding: 2%;
+    text-decoration: none;
+    /*把<a>的底線去掉*/
+}
+
+.btn:hover {
+    border: 1px solid blue;
+    background-color: white;
+    color: blue;
+}
+
+.logo {
+    width: 20%;
+    float: left;
+    /* border: 1px solid black;*/
+    font-weight: bold;
+}
+
+.menu {
+    /* border-bottom: 1px solid #000000; */
+    /* 讓選單下面有線 */
+    width: 20%;
+    float: right;
+    /*border: 1px solid black;*/
+}
+
+.menu ul {
+    list-style-type: none;
+    /*把項目前面的點點刪除*/
+    
+}
+
+.menu ul li {
+    display: inline;
+    /*列表的一項一項原本是一行一行，把它變成全部一行*/
+    padding: 2%;
+    /*讓menu那行四個小項目彼此有點距離*/
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    /*粗體字*/
+}
+
+.menu ul li a:hover {
+    /*點擊的時候產生的變化*/
+    color: black;
+    text-decoration: underline;
+}
+
+.about {
+    margin-bottom: 5%;
+    /*讓about下面有空間和下一區塊不會連在一起*/
+}
+
+
+/*CSS for about section*/
+
+.about-title {
+    margin-bottom: 3%;
+    /*下邊界以最近的div為主，和下一個div的距離*/
+}
+
+.about-subtitle {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    margin-bottom: 8%;
+}
+
+.about-description {
+    font-size: 1.2em;
+    /*字體大小*/
+    line-height: 150%;
+    margin-bottom: 3%;
+}
+
+.projects a {
+    color: black;
+    text-align: center;
+}
+
+.projects a:hover {
+    color: rgb(21, 27, 133);
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/*CSS for Blogs*/
+
+.blog-title {
+    padding: 2%;
+}
+
+.blogs a {
+    color: black;
+    text-align: center;
+}
+
+.blogs a:hover {
+    color: rgb(21, 27, 133);
+    font-weight: bold;
+    text-align: center;
+}
+
+.margin-bottom {
+    margin-bottom: 12%;
+}
+
+
+/* 首頁照片css */
+html 
+{
+    overflow-x: hidden;
+}
+
+body {
+
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    background-color: white;
+    
+}
+
+
+
+
+.card
+{
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    background-color: white;
+}
+.card.active
+{
+    height:490px;
+}
+
+.photo
+{
+    z-index: 3;
+    position: relative;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    background-color: white;
+    margin: 0 auto;
+    background-image: url("https://xuwztydqqoyqwrjsgfbd.supabase.co/storage/v1/object/public/demo-27/md_img/lin%20bei%20a%20img.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    top:75px;
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    -webkit-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -moz-transition:    top 0.7s ease-in-out, background 0.15s ease;
+    -o-transition:      top 0.7s ease-in-out, background 0.15s ease;
+    -ms-transition:     top 0.7s ease-in-out, background 0.15s ease;
+}
+
+.photo.active
+{
+   background-size: 150%;
+}
+.card ul
+{
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin-top:87px;
+    margin-bottom:30px;
+    font-size: 20px;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition:    all 0.7s ease-in-out;
+    -o-transition:      all 0.7s ease-in-out;
+    -ms-transition:     all 0.7s ease-in-out;
+}
+
+
+/* 名片css */
+
+/* * {
+    font-family: "Raleway", sans-serif, 微軟正黑體;
+    text-decoration: none;
+  }
+  
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    width: 100%;
+    height: 100%;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    margin: 0;
+    background-color: #e0e0e2;
+    box-sizing: border-box; /* box-sizing => border-box屬性長寬包含了div的padding以及border */
+    /* overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  } */ */
+  p {
+    letter-spacing: 1px;
+    line-height: 22px;
+    padding: 0; /* 將文字的padding,margin改成0 */
+    margin: 0;
+    color: #666;
+    font-size: 10px;
+  }
+  
+  .namecard {
+    width: 350px;
+    height: 210px;
+    padding: 25px;
+    margin: auto;
+    position: relative;
+    background: linear-gradient(#f2f2f2, #eee);
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    /* --------------------------------------------------- */
+    transition: all 0.5s; /* transition 教課時記得寫完動畫再加上此屬性*/
+  }
+  
+  .namecard .name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: -3px;
+    color: #ff9912;
+  }
+  
+  .namecard .position {
+    color: #36b9c1;
+  }
+  
+  .namecard .intro {
+    padding-right: 150px;
+    /* 將intro推窄 */
+  }
+  
+  .namecard .intro .lineid {
+    color:#ff9912
+  }
+  
+  
+  
+  .wave {
+    width: 700px;
+    height: 700px;
+    opacity: 0.4;
+    position: absolute;
+    left: 0;
+    background: #ff9912;
+    border-radius: 40%;
+    /* transform-origin: 50% 48%; */
+    transition: left 2s;
+    animation: drift 6000ms infinite linear;
+    margin-left: 280px;
+  }
+  .wave.-three {
+    animation: drift 7000ms infinite linear;
+    margin-left: 270px;
+  }
+  
+  .wave.-two {
+    animation: drift 10000ms infinite linear;
+    background-color: yellow;
+    opacity: 0.1;
+    margin-left: 260px;
+  }
+  
+  .wave.right {
+    margin-top: -250px;
+  }
+  
+  @keyframes drift {
+    from {
+      transform: rotate(0deg);
+    }
+    from {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .namecard:hover {
+    transform: translate3d(-5px, -5px, 0);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+    /* 滑鼠碰觸時讓卡片向左上飄移 */
+  }
+  
+  .namecard:hover .wave.right {
+    left: 70px;
+  }
+  

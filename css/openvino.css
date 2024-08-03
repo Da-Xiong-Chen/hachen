@@ -1,0 +1,101 @@
+    .wrapper {
+        /*border: 1px solid red;*/
+        width: 70%;
+        margin: 0 auto;
+        padding: 2%;
+        margin: auto;
+    }
+    
+    .bigwrapper {
+        /*border: 1px solid red;*/
+        width: 90%;
+        margin: 0 auto;
+        padding: 2%;
+        margin: auto;
+    }
+    
+    .smallwrapper {
+        /*border: 1px solid red;*/
+        width: 40%;
+        margin: 0 auto;
+        padding: 2%;
+        margin: auto;
+    }
+    
+    .firsttitle {
+        width: 10%;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    .text-center {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-bottom: 3%;
+        /*讓project那行文字靠中*/
+    }
+    
+    .text-center-2 {
+        text-align: center;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        /*讓project那行文字靠中*/
+    }
+    
+    .block-right {
+        float: right;
+        width: 10%;
+    }
+    
+    .block-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .img-responsive {
+        width: 100%/*讓整張圖佔滿那個div區塊*/
+    }
+    
+    .col-1 {
+        /* border: 1px solid black;*/
+        width: 70%;
+        /*原本設50%但又有border1px兩個加起來超過100%會跑到下一行所以設小於50%*/
+        margin-right: 2%;
+    }
+    
+    .col-2 {
+        /*border: 1px solid black;*/
+        width: 30%;
+        /*原本設50%但又有border1px兩個加起來超過100%會跑到下一行所以設小於50%*/
+        float: left;
+        margin-right: 4%;
+        margin-bottom: 3%;
+    }
+    
+    .back {
+        width: 70%;
+        float: right;
+        /*border: 1px solid black;*/
+    }
+    
+    .btn:hover {
+        border: 1px solid rgb(227, 121, 149);
+        color: white;
+        background-color: white;
+        color: rgb(227, 121, 149);
+        border-radius: 10px;
+    }
+    
+    .clearfix {
+        /*因為左logo和右menu共90%下一行會跑來中間這因此用clearfix來卡個位*/
+        float: none;
+        clear: both;
+    }
+    
+    .firsttitle {
+        width: 70%;
+        float: center;
+        /*border: 1px solid black;*/
+    }

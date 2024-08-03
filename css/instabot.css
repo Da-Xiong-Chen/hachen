@@ -1,0 +1,58 @@
+.wrapper {
+    /* border: 1px solid red;*/
+    width: 30%;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+.bigwrapper {
+    /* border: 1px solid red;*/
+    width: 60%;
+    margin: 0 auto;
+    padding: 2%;
+    margin: auto;
+}
+
+.img-responsive {
+    width: 100%/*讓整張圖佔滿那個div區塊*/
+}
+
+.clearfix {
+    /*因為左logo和右menu共90%下一行會跑來中間這因此用clearfix來卡個位*/
+    float: none;
+    clear: both;
+}
+
+.firsttitle {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.col-1 {
+    /*border: 1px solid black;*/
+    width: 90%;
+    /*原本設50%但又有border1px兩個加起來超過100%會跑到下一行所以設小於50%*/
+    margin-right: 2%;
+    margin-bottom: 3%;
+}
+
+.text-center {
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-bottom: 3%;
+    /*讓project那行文字靠中*/
+}
+
+.text-center-2 {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /*讓project那行文字靠中*/
+}
+
+.block-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
