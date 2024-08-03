@@ -4,20 +4,23 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-/* .header {
+.header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     background-color: #f0f0f0; 
-} */
+    z-index: 9999;
+}
 
 .wrapper {
     /*border: 1px solid red;*/
     width: 80%;
     margin: 0 auto;
-    padding: 2%;
+    padding: 1%;
     margin: auto;
+   
+    
 }
 
 .separateness {
@@ -54,6 +57,7 @@
     /*因為左logo和右menu共90%下一行會跑來中間這因此用clearfix來卡個位*/
     float: none;
     clear: both;
+    padding: 1%;
 }
 
 .img-responsive {
