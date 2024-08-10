@@ -5,22 +5,68 @@
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ea9f44; 
-    z-index: 9999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ea9f44; 
+  z-index: 9999;
 }
 
 .wrapper {
-    /*border: 1px solid red;*/
-    width: 80%;
-    margin: 0 auto;
-    padding: 2%;
-    margin: auto;
-   
-    
+  width: 80%;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu-toggle {
+  display: none; /* 仅在小屏幕时显示 */
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  right: 20px; /* 使图标靠右 */
+  top: 20px; /* 根据需要调整图标距顶部的距离 */
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+  }
+  
+  .menu-toggle {
+      display: block;
+  }
+  
+  .menu.show {
+      display: flex;
+  }
+  
+  .menu ul {
+      flex-direction: column;
+  }
+  
+  .menu li {
+      margin: 10px 0;
+  }
 }
 
 .separateness {
