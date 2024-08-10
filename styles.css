@@ -37,11 +37,15 @@
 
 .menu-toggle {
   display: none; /* 仅在小屏幕时显示 */
-  font-size: 24px;
+  font-size: 30px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  background-color: #40e495;
   cursor: pointer;
   position: absolute;
-  right: 20px; /* 使图标靠右 */
-  top: 20px; /* 根据需要调整图标距顶部的距离 */
+  right: 40px; /* 使图标靠右 */
+  top: 15px; /* 根据需要调整图标距顶部的距离 */
 }
 
 @media screen and (max-width: 768px) {
