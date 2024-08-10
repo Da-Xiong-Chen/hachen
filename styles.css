@@ -62,6 +62,7 @@
   
   .menu.show {
       display: flex;
+      margin-top: 60px; /* 根据需要调整此值，使菜单内容下移 */
   }
   
   .menu ul {
