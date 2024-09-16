@@ -67,6 +67,11 @@ th{
 
 }
 
+.lab:hover {
+    background:yellow;
+
+}
+
 td:hover {
     background:grey;
 
