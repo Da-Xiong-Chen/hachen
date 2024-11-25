@@ -19,10 +19,7 @@
   padding: 2%;
 }
 
-.logo {
-  display: flex;
-  width: 80px;
-}
+
 
 .menu {
   display: flex;
@@ -345,7 +342,7 @@ body {
     background-color: white;
     margin: 0 auto;
     /* background-image: url("https://xuwztydqqoyqwrjsgfbd.supabase.co/storage/v1/object/public/demo-27/md_img/lin%20bei%20a%20img.png"); */
-    background-image: url("./images/lin\ bei\ a\ img.png");
+    background-image: url("./images/lin\ bei\ \ img.jpg");
     background-size: cover;
     background-position: 50% 50%;
     top:75px;
