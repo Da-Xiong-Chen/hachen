@@ -1,0 +1,183 @@
+/* 通用樣式 */
+* {
+  font-family: "Raleway", sans-serif, 微軟正黑體;
+  text-decoration: none;
+}
+
+html,
+body {
+  padding: 50px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* 支持換行 */
+  gap: 20px; /* 卡片之間的間距 */
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+p {
+  letter-spacing: 1px;
+  line-height: 22px;
+  padding: 0;
+  margin: 0;
+  color: #666;
+  font-size: 10px;
+}
+
+h1 {
+  font-size: 30px;
+  color: #36b9c1;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+  height: 500px;
+  /* padding: 20%; */
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /* 支持換行 */
+  gap: 20px; /* 卡片之間的間距 */
+}
+
+.namecard {
+  width: 400px; /* 卡片寬度固定 */
+  height: auto;
+  padding: 25px;
+  position: relative;
+  background: linear-gradient(#f2f2f2, #eee);
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  transition: all 0.5s;
+}
+
+.namecard .name {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: -3px;
+  color: #36b9c1;
+}
+
+.namecard .name1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: -3px;
+  color: #ea9f44;
+}
+
+.namecard .position {
+  color: #36b9c1;
+}
+
+.namecard .intro {
+  padding-right: 150px;
+}
+
+.wave {
+  width: 700px;
+  height: 700px;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  background: #36b9c1;
+  border-radius: 40%;
+  transition: left 2s;
+  animation: drift 6000ms infinite linear;
+  margin-left: 280px;
+}
+
+.wave.-three {
+  animation: drift 7000ms infinite linear;
+  margin-left: 270px;
+}
+
+.wave.-two {
+  animation: drift 10000ms infinite linear;
+  background-color: yellow;
+  opacity: 0.1;
+  margin-left: 260px;
+}
+
+.wave.right {
+  margin-top: -250px;
+}
+
+.wave1 {
+  width: 700px;
+  height: 700px;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  background: #ea9f44;
+  border-radius: 40%;
+  transition: left 2s;
+  animation: drift 6000ms infinite linear;
+  margin-left: 280px;
+}
+
+.wave1.-three {
+  animation: drift 7000ms infinite linear;
+  margin-left: 270px;
+}
+
+.wave1.-two {
+  animation: drift 10000ms infinite linear;
+  background-color: yellow;
+  opacity: 0.1;
+  margin-left: 260px;
+}
+
+.wave1.right {
+  margin-top: -250px;
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.namecard:hover {
+  transform: translate3d(-5px, -5px, 0);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+}
+
+.namecard:hover .wave.right {
+  left: 70px;
+}
+
+/* 小螢幕垂直排列 */
+/* @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .namecard {
+    width: 90%;
+    margin: 10px 0;
+    height: auto;
+  }
+  .intro {
+    padding-right: 0;
+  }
+  .wave {
+    width: 500px;
+    height: 500px;
+    margin-left: 150px;
+  }
+} */
