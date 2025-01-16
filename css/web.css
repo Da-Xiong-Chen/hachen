@@ -96,3 +96,88 @@
     align-items: center;
 
 }
+
+table,tr,td{
+
+    padding: 20px;
+    font-size: 20px;
+    font-weight:bold ;
+    font-family: monospace;
+    border:2px solid #000;
+    border-collapse: collapse;
+  
+  
+  
+  }
+  .font{
+    color:white;
+  }
+  table{
+    alignment:center;
+  }
+  th{
+    background: rgb(128,34,34);
+    color:white;
+  }
+  
+  .subj1{
+    background: rgb(1, 118, 6);
+    color:white;
+  }
+  
+  .subj2{
+    background: rgb(1, 118, 254);
+    color:white;
+  }
+  
+  .subj3{
+    background: rgb(197, 181, 254);
+    color:white;
+  }
+  
+  .subj4{
+    background: rgb(124, 89, 36);
+    color:white;
+  }
+  
+  .subj5{
+    background: rgb(241, 89, 36);
+    color:white;
+  }
+  
+  .subj6{
+    background: rgb(101, 101, 104);
+    color:white;
+  }
+  
+  .work:hover {
+      background:red;
+  
+  }
+  
+  .lab:hover {
+      background:yellow;
+  
+  }
+  
+  td:hover {
+      background:grey;
+  
+  }
+  .center {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  h1{
+    font-size: 50;
+    font-family: fantasy;
+  }
+  h2{
+    font-weight: bold;
+    font-size: 30px;
+  
+  
+  }
+  

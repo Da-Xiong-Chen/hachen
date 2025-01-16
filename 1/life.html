@@ -8,8 +8,18 @@
 </head>
 <body>
     <h1>記錄生活</h1>
+    
     <a href="https://www.google.com/maps/contrib/113252576292769411778/reviews/@25.1051282,121.4465054,12z/data=!3m1!4b1!4m3!8m2!3m1!1e1?authuser=0&entry=ttu">
         <div class="header-text">想看我記錄更多事物點這邊!</div>
+        <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+          <path id="circle1" stroke-linecap="round" stroke-linejoin="round" d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+      </svg>
+      <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+        <path id="circle2" stroke-linecap="round" stroke-linejoin="round" d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+    </svg>
+    <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+      <path id="circle3" stroke-linecap="round" stroke-linejoin="round" d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+  </svg>
     </a>
     <div class="header-text">心目中排行前3美食</div>
     <div class="container">
@@ -83,7 +93,25 @@
         <div class="footer-text">back</div>
       </a>
     
+      <script>
+        const circles = [
+            document.getElementById('circle1'),
+            document.getElementById('circle2'),
+            document.getElementById('circle3')
+        ];
+        let currentIndex = 0; // 當前亮燈的燈泡索引
 
+        setInterval(() => {
+            // 全部燈泡變暗
+            circles.forEach(circle => circle.setAttribute('opacity', '0.2'));
+
+            // 讓當前燈泡亮起
+            circles[currentIndex].setAttribute('opacity', '1');
+
+            // 切換到下一個燈泡
+            currentIndex = (currentIndex + 1) % circles.length; // 循環切換 0, 1, 2
+        }, 500); // 每 500 毫秒切換一次
+    </script>
   
 </body>
 </html>
