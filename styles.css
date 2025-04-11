@@ -606,3 +606,76 @@ body {
   }
 
 
+/* 預設隱藏主頁內容 */
+#mainContent {
+  display: none;
+}
+/* 動畫區塊樣式 */
+/* 整個螢幕的動畫區塊 */
+#splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 999;
+}
+/* 兩扇門的共用樣式 */
+.door {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background-color: #3C3C3C;  /* 背景色，可依需求調整 */
+  z-index: 1;
+}
+/* 左門初始定位 */
+.door.left {
+  left: 0;
+}
+/* 右門初始定位 */
+.door.right {
+  right: 0;
+}
+/* 中央文字 */
+#splashText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 2em;
+  z-index: 2;
+}
+/* 主頁內容預設隱藏 */
+#mainContent {
+  display: none;
+  padding: 20px;
+}
+/* 左門開門動畫：從原位移到左方移出螢幕 */
+@keyframes openLeft {
+  from { left: 0; }
+  to { left: -50%; }
+}
+/* 右門開門動畫：從原位移到右方移出螢幕 */
+@keyframes openRight {
+  from { right: 0; }
+  to { right: -50%; }
+}
+/* 當加入 .open 類別後，左門觸發 openLeft 動畫 */
+.door.left.open {
+  animation: openLeft 1s forwards;
+}
+/* 當加入 .open 類別後，右門觸發 openRight 動畫 */
+.door.right.open {
+  animation: openRight 1s forwards;
+}
+/* 可選：文字淡出效果 */
+#splashText.fade {
+  animation: fadeOut 1s forwards;
+}
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
