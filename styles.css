@@ -9,12 +9,18 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 10%;
+  height: 15%;
   background-color: #ea9f44; 
   z-index: 9999;
 }
 
 .wrapper {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+.wrapper1 {
   width: 80%;
   margin: 0 auto;
   padding: 2%;
@@ -53,6 +59,22 @@
 
 /* 小螢幕樣式 */
 @media only screen and (max-width: 768px) {
+
+  /* 調整 header 下方的項目避免被遮住 */
+  .projects {
+    /* 加入的上內距可以調整，如 10vh 表示 header 高度10%的視窗高度，
+       視實際效果你也可以用 px 值，例如 60px 之類的 */
+    padding-top: 10vh;
+  }
+
+  .projects .wrapper {
+    text-align: center;
+  }
+  /* 如要更精準，可以直接鎖定該段文字標籤 */
+  .projects .wrapper h1,
+  .projects .wrapper p {
+    text-align: center;
+  }
   /* 讓 wrapper 成為 flex container，使內部元素（logo 與 menu-toggle）水平排列且垂直置中 */
   .wrapper {
     display: flex;
@@ -132,6 +154,11 @@
 }
 
 .text-center {
+  .projects {
+    /* 加入的上內距可以調整，如 10vh 表示 header 高度10%的視窗高度，
+       視實際效果你也可以用 px 值，例如 60px 之類的 */
+    padding-top: 10vh;
+  }
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 3%;
@@ -139,6 +166,11 @@
 }
 
 .text-center-non-margin {
+  .projects {
+    /* 加入的上內距可以調整，如 10vh 表示 header 高度10%的視窗高度，
+       視實際效果你也可以用 px 值，例如 60px 之類的 */
+    padding-top: 10vh;
+  }
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     /*讓project那行文字靠中*/
