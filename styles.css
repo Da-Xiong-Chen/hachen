@@ -37,7 +37,7 @@
   margin-left: 20px;
 }
 
-/* 桌面版漢堡圖標，預設隱藏 */
+/* 桌面版漢堡圖標預設隱藏 */
 .menu-toggle {
   display: none; /* 仅在小屏幕时显示 */
   font-size: 30px;
@@ -47,8 +47,8 @@
   background-color: #40e495;
   cursor: pointer;
   position: absolute;
-  right: 40px; /* 使图标靠右 */
-  top: 15px; /* 根据需要调整图标距顶部的距离 */
+  right: 40px; /* 使圖標靠右 */
+  top: 15px; /* 根據需要調整圖標距頂部的距離 */
 }
 
 /* 小螢幕樣式 */
@@ -71,7 +71,7 @@
     width: auto;
   }
   
-  /* 小螢幕漢堡圖標，取消絕對定位，改為在 flex 流中排列 */
+  /* 手機版漢堡圖標：取消絕對定位，改為在 flex 流中排列 */
   .menu-toggle {
     display: block;
     font-size: 1.5em;
@@ -79,28 +79,37 @@
     position: static;
   }
   
-  /* 隱藏桌面版選單，改為垂直排列 */
+  /* 將選單變更為絕對定位，讓它疊在 header 下方，避免推動其他內容 */
   .menu {
+    position: absolute;
+    top: 100%;  /* header 底下 */
+    right: 10%;
+    width: 100%;
+    background-color: #40e495; /* 固定綠色背景 */
     display: none;
     flex-direction: column;
-    width: 100%;
     text-align: center;
+    padding: 10px 0;
+    z-index: 9999; /* 若需要疊在 header 下方，可自行調整 */
   }
   
-  /* 當選單開啟時的狀態 */
+  /* 當選單打開時，僅切換 display */
   .menu.show {
     display: flex;
-    margin-top: 60px; /* 根據需要調整選單下移的間距 */
   }
   
   .menu ul {
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* 確保 ul 裡的文字也置中 */
   }
   
   .menu li {
     margin: 10px 0;
   }
 }
+
 
 
 
