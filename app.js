@@ -28,3 +28,4 @@ document.addEventListener('DOMContentLoaded', function() {
       }, 1000); // 此處的 1000 毫秒與動畫持續時間相同
     }, 2000);
   });
+  
