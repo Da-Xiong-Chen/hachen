@@ -750,3 +750,39 @@ body {
   to { opacity: 0; }
 }
 
+
+.card-social {
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin-bottom: 30px;
+  gap: 4px; /* 使用 gap 來控制間距，更均勻 */
+}
+
+.card-social a {
+  color: #8797a1;
+  height: 32px; /* 增大點，讓 svg 有空間 */
+  width: 32px;
+  border-radius: 50%;
+  display: flex; /* 改成 flex，確保 svg 置中 */
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  background-color: rgba(93, 133, 193, 0.05);
+  padding: 0; /* 確保沒多餘內距 */
+}
+
+.card-social a:last-child {
+  margin-right: 0;
+}
+
+.card-social svg {
+  fill: rgb(165, 181, 206);
+  width: 16px;
+  height: 16px;
+  display: block;
+  transition: 0.3s;
+  margin: 0; /* 避免 svg 本身有 margin */
+}
