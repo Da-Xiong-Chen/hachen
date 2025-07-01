@@ -774,6 +774,22 @@ body {
   padding: 0; /* 確保沒多餘內距 */
 }
 
+.card-social a.facebook {
+  border: 2px solid #1877F3; /* Facebook 藍 */
+}
+
+.card-social a.line {
+  border: 2px solid #06C755; /* LINE 綠 */
+}
+
+.card-social a.ig {
+  border: 2px solid #E4405F; /* Instagram 漸層 */
+}
+
+.card-social a.github {
+  border: 2px solid #181717; /* GitHub 黑 */
+}
+
 .card-social a:last-child {
   margin-right: 0;
 }
