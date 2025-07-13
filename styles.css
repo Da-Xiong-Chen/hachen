@@ -332,6 +332,14 @@
     margin-bottom: 3%;
 }
 
+.about-paper {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+    margin-bottom: 3%;
+    width: 60% ;
+}
+
 .about-description {
     font-size: 1.2em;
     /*字體大小*/
