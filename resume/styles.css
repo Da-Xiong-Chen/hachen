@@ -151,7 +151,7 @@ img {
 .ex-con-right, .ed-con-right {
   display: inline-block;
   width: 400px;
-  height: 250px;
+  /* height: 250px; */
 }
 .ex-con-right h3, .ed-con-right h3 {
   margin: 10px;
@@ -312,7 +312,7 @@ img {
 
 /* 技能 */
 .skills {
-  height: 200px;
+  /* height: 300px; */
 }
 
 .sk-title {
@@ -323,7 +323,7 @@ img {
 .skill-con-left, .skill-con-right {
   display: inline-block;
   width: 230px;
-  height: 130px;
+  height: 200px;
   margin-top: 20px;
 }
 
