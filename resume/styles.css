@@ -31,12 +31,13 @@ html, body {
 }
 
 .photo {
-  width: 200px;
+  width: 210px;
   height: 275px;
   display: inline-block;
   margin-top: 20px;
   margin-left: 300px;
   background-color: #24260f;
+  object-fit: cover;
 }
 .photo h1 {
   text-align: center;

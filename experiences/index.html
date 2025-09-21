@@ -3,182 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的經歷</title>
-    <link rel="stylesheet" href="../styles.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <div class="header">
-        <div class="wrapper">
-            <a href="../index.html">
-                <div class="logo"><img src="../images/網頁標頭1125.png" alt="fail to show"></div>
-            </a>            <div class="menu-toggle" id="menu-toggle">
-                &#9776; <!-- 漢堡圖標 -->
-            </div>
-            <div class="menu text-right" id="menu">
-                <ul>
-                    <li>
-                        <a href="../resume/resume.html">Myself</a>
-                    </li>
-                    <li>
-                        <a href="../experiences/index.html">About</a>
-                    </li>
-                    <li>
-                        <a href="../contact/index.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-     <!--Projects section starts here-->
-     <div class="projects" id="experiences">
-        <div class="wrapper1">
-            <h1 style="color: #ffffff;">123<br>132<br>132<br>132</h1>
-            <h1 class="text-center-non-margin">我的經歷</h1>
-            <p class="text-center">(點進去可以看更多資訊!)</p>
+    <header class="static-header">
+	<img src="../images/網頁標頭1125.png" height="40" height="auto"/>
+	<nav>
+		<a href="../resume/resume.html">Myself</a>
+		<a href="./index.html">About</a>
+		<a href="../contact/index.html">Contact</a>
+	</nav>
+</header>
+<header class="fixed-header">
+	<div class="fheader__container">
+		<img src="../images/網頁標頭1125.png" width="30px" height="auto"/>
+		<nav>
+			<a href="../resume/resume.html">Myself</a>
+		    <a href="./index.html">About</a>
+		    <a href="../contact/index.html">Contact</a>
+		</nav>
+	</div>
+</header>
+<div class="container__content">
+	<div id="section1" class="section1">
+        <a href="../1/web.html">
+            <h1>網頁設計</h1>
+        </a>
+	</div>
+	<div id="section2" class="section2">
+        <a href="../1/project.html">
+            <h1>專題作品</h1>
+        </a>
+	</div>
+	<div id="section3" class="section3">
+        <a href="../1/scholarship.html">
+            <h1>獎學金</h1>
+        </a>
+	</div>
+	<div id="section4" class="section4">
+        <a href="../1/work.html">
+            <h1>打工人生</h1>
+        </a>
+	</div>
+    <div id="section1" class="section1">
+        <a href="../1/certificate.html">
+            <h1>證照活動</h1>
+        </a>
+	</div>
+    <div id="section2" class="section2">
+        <a href="../1/university.html">
+            <h1>大學文憑</h1>
+        </a>
+	</div>
+    <div id="section3" class="section3">
+        <a href="../1/life.html">
+            <h1>記錄生活</h1>
+        </a>
+	</div>
+    <div id="section4" class="section4">
+        <a href="../1/daxiongstudio.html">
+            <h1>斜槓人生</h1>
+        </a>
+	</div>
+</div>
+<footer>
 
-
-            <div class="buttons">
-                <a href="../1/web.html" class="buttonchoose"><button class="btn-hover color-10">網頁設計</button></a>
-                <a href="../1/project.html"><button class="btn-hover color-1">專題作品</button></a>
-                <a href="../1/scholarship.html" class="submit"><button class="btn-hover color-3">獎學金</button></a>
-                <a href="../1/work.html" class="buttonchoose"><button class="btn-hover color-9">打工人生</button></a>
-                <a href="../1/certificate.html" class="submit"><button class="btn-hover color-4">證照活動</button></a>
-                <a href="../1/university.html" class="submit"><button class="btn-hover color-5">大學文憑</button></a>
-                <a href="../1/life.html"><button class="btn-hover color-6">記錄生活</button></a>  
-                <a href="../1/daxiongstudio.html" class="submit"><button class="btn-hover color-2">斜槓人生</button></a>
-                <!-- <a href="../1/schedule.html"><button class="btn-hover color-1">我的時間</button></a> -->
-            </div>
-
-            <!-- <a href="../1/web.html">
-                <div class="col-4 project-box">
-                    <img src="../images/projects/web-design.jpg" alt="fail to show" class="img-responsive"></img>
-                    <div class="project-title">
-                        網頁設計
-                    </div>
-                </div>
-            </a>
-            
-            <a href="../1/scholarship.html">
-                <div class="col-4 project-box">
-                    <img src="../images/projects/unity.jpg" alt="fail to show" class="img-responsive "></img>
-                    <div class="project-title">
-                        證照&獎學金
-                    </div>
-                </div>
-            </a>
-
-            <a href="../1/project.html">
-                <div class="col-4 project-box">
-                    <img src="../images/projects/compiler.jpg" alt="fail to show" class="img-responsive"></img>
-                    <div class="project-title">
-                        大學專題
-                    </div>
-                </div>
-            </a>
-
-            <a href="../1/work.html">
-                <div class="col-4 project-box">
-                    <img src="../images/projects/web-crawler.jpg" alt="fail to show" class="img-responsive"></img>
-                    <div class="project-title">
-                        工作經驗
-                    </div>
-                </div>
-            </a>
-
-            <a href="../1/university.html">
-                <div class="col-4 project-box">
-                    <img src="../images/university.jpg" alt="fail to show" class="img-responsive"></img>
-                    <div class="project-title">
-                        大學文憑
-                    </div>
-                </div>
-            </a>
-            
-            <a href="../1/university.html">
-                <div class="col-4 project-box">
-                    <img src="../images/university.jpg" alt="fail to show" class="img-responsive"></img>
-                    <div class="project-title">
-                        大學文憑
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://www.8591.com.tw/user-userAppraise.html?userId=3321252&role=B">
-                <div class="col-4 project-box">
-                    <img src="../images/cash.jpg" alt="fail to show" class="img-responsive"></img>
-                    <div class="project-title">
-                        斜槓人生
-                    </div>
-                </div>
-            </a>
-
-            <a href="https://www.google.com/maps/contrib/113252576292769411778/reviews/@25.1051282,121.4465054,12z/data=!3m1!4b1!4m3!8m2!3m1!1e1?authuser=0&entry=ttu">
-                <div class="col-4 project-box">
-                    <img src="../images/food.jpg" alt="fail to show" class="img-responsive"></img>
-                    <div class="project-title">
-                        記錄生活
-                    </div>
-                </div>
-            </a> -->
-
-            
-
-            <div class="clearfix"></div>
-
-            <!--分隔-->
-            <div class="separateness"></div>
-
-            <!-- <a href="../1/1/unity.html">
-                <div class="col-4 project-box">
-                    <img src="images/projects/unity.jpg" alt="fail to show" class="img-responsive"></img>
-                    <div class="project-title">
-                        Unity
-                    </div>
-                </div>
-            </a>
-
-
-            <a href="../1/1/compiler.html">
-                <div class="col-4 project-box">
-                    <img src="images/projects/compiler.jpg" alt="fail to show" class="img-responsive"></img>
-                    <div class="project-title">
-                        Compiler
-                    </div>
-                </div>
-            </a>
-
-            <a href="../1/1/crawler.html">
-                <div class="col-4 project-box">
-                    <img src="images/projects/web-crawler.jpg" alt="fail to show" class="img-responsive"></img>
-                    <div class="project-title">
-                        Web crawler
-                    </div>
-                </div>
-            </a>
-
-            <a href="../1/1/instabot.html">
-                <div class="col-4 project-box">
-                    <img src="images/projects/bot.jpg" alt="fail to show" class="img-responsive"></img>
-                    <div class="project-title">
-                        Instagram Bot
-                    </div>
-                </div>
-            </a> -->
-
-            <div class="clearfix"></div>
-
-
-
-        </div>
-    </div>
-    <!--Projects section ends here-->
-
-    <!--Skills Section starts here-->
-    
-    
-    <!--Skills section ends here-->
-    <script src="../app.js"></script>
-
+</footer>
+<script src="./app.js"></script>
 </body>
 </html>

@@ -1,0 +1,116 @@
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin: 0;
+	padding: 0 15px 30px 15px;
+	box-sizing: border-box;
+	background: #F3F3F3;
+}
+
+.static-header {
+	max-width: 900px;
+	overflow: hidden;
+	box-sizing: border-box;
+	margin: 20px auto;
+	text-align: center;
+}
+.static-header img {
+	margin: 0 auto;
+}
+.static-header nav {
+	padding: 20px 0 0;
+	max-width: 400px;
+	margin: 0 auto;
+}
+.static-header nav a {
+	display: inline-block;
+	color: #666666;
+	text-decoration: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+.static-header nav a:not(:last-of-type) {
+	padding-right: 30px;
+}
+.static-header nav a:hover {
+	color: #333333;
+}
+
+.fixed-header {
+	display: none;
+	position: fixed;
+	top: 0;
+	background: #ea9f44;
+	margin: 0 -15px;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 10px 0 rgba(0, 0, 0, 0.5);
+	opacity: 0.9;
+	z-index: 100;
+}
+.fixed-header .fheader__container {
+	max-width: 900px;
+	padding: 15px 30px;
+	margin: 0 auto;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.fixed-header .fheader__container img {
+	float: left;
+	height: 30px;
+	width: auto;
+}
+.fixed-header .fheader__container nav {
+	padding: 5px 0;
+	max-width: 400px;
+	float: right;
+	text-align: right;
+}
+.fixed-header .fheader__container nav a {
+	display: inline-block;
+	color: #ffffff;
+	text-decoration: none;
+	font-size: 14px;
+	cursor: pointer;
+}
+.fixed-header .fheader__container nav a:not(:last-of-type) {
+	padding-right: 15px;
+}
+.fixed-header .fheader__container nav a:hover {
+	color: #333333;
+}
+
+.container__content {
+	margin: 0 auto;
+	max-width: 900px;
+	background: rgba(255, 255, 255, 0.8);
+	box-sizing: border-box;
+	min-height: 1000px;
+	overflow: hidden;
+	padding: 15px;
+	clear: both;
+}
+.container__content > div {
+	min-height: 500px;
+	display: block;
+	overflow: hidden;
+}
+.container__content > div h1 {
+	text-align: center;
+	line-height: 500px;
+	color: #666666;
+	margin: 0;
+}
+.container__content > div.section1 {
+	background: #ffd6cd;
+}
+.container__content > div.section2 {
+	background: #ddebfd;
+}
+.container__content > div.section3 {
+	background: #ffd6cd;
+}
+.container__content > div.section4 {
+	background: #ddebfd;
+}
