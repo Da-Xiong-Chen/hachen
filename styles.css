@@ -1,6 +1,6 @@
 * {
-    margin: 0 auto;
-    padding: 0;
+    /* margin: 0 auto; */
+    /* padding: 0; */
     font-family: Georgia, 'Times New Roman', Times, serif;
     
 }
@@ -195,7 +195,7 @@
     /*原本設50%但又有border1px兩個加起來超過100%會跑到下一行所以設小於50%*/
     float: center;
     text-align: center;
-    margin-right: 2%;
+    margin: 0 auto;
 }
 
 
@@ -321,8 +321,9 @@
 /*CSS for about section*/
 
 .about-title {
-    margin-bottom: 3%;
+    margin-bottom: 1%;
     /*下邊界以最近的div為主，和下一個div的距離*/
+
 }
 
 .about-subtitle {
@@ -330,6 +331,93 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: gray;
     margin-bottom: 1%;
+}
+
+.about-map {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; /* 改為白色文字，因背景是彩色漸層 */
+    /* margin-bottom: 1%; */ /* 不必要，除非需要 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 垂直居中內容 */
+    width: 300px; /* 改為100%，讓元素可以擴展父容器寬度 */
+    min-height: 5vh; /* 佔滿螢幕高度 */
+    padding: 30px;
+    box-sizing: border-box; /* 包含padding在內 */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%);    /* 取消不必要或重複的屬性 */
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.about-map a {
+    color: white;
+    text-decoration: none;
+}
+
+.about-work {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; /* 改為白色文字，因背景是彩色漸層 */
+    /* margin-bottom: 1%; */ /* 不必要，除非需要 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 垂直居中內容 */
+    width: 300px; /* 改為100%，讓元素可以擴展父容器寬度 */
+    min-height: 5vh; /* 佔滿螢幕高度 */
+    padding: 30px;
+    box-sizing: border-box; /* 包含padding在內 */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 51%, #ffecd2 100%);    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.about-work a {
+    color: white;
+    text-decoration: none;
+} 
+
+.about-sales {
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white; /* 改為白色文字，因背景是彩色漸層 */
+    /* margin-bottom: 1%; */ /* 不必要，除非需要 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* 垂直居中內容 */
+    width: 300px; /* 改為100%，讓元素可以擴展父容器寬度 */
+    min-height: 5vh; /* 佔滿螢幕高度 */
+    padding: 30px;
+    box-sizing: border-box; /* 包含padding在內 */
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%);    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.about-sales a {
+    color: white;
+    text-decoration: none;
 }
 
 .about-paper {
@@ -483,8 +571,8 @@ body {
     align-items: center;
   } */ */
   p {
-    letter-spacing: 1px;
-    line-height: 22px;
+    /* letter-spacing: 1px; */
+    line-height: 12px;
     padding: 0; /* 將文字的padding,margin改成0 */
     margin: 0;
     color: #666;
@@ -493,7 +581,7 @@ body {
   
   .namecard {
     width: 350px;
-    height: 240px;
+    height: 260px;
     padding: 25px;
     margin: auto;
     position: relative;
@@ -504,7 +592,7 @@ body {
     font-weight: bold;
     /* --------------------------------------------------- */
     transition: all 0.5s; /* transition 教課時記得寫完動畫再加上此屬性*/
-    margin-bottom: 60px;
+    margin: 0 auto;
   }
   
   .namecard .name {
@@ -512,10 +600,12 @@ body {
     font-weight: bold;
     margin-left: -3px;
     color: #ff9912;
+    /* margin-bottom: 8px; */
   }
   
   .namecard .position {
     color: #36b9c1;
+    margin-top: 4px;
   }
   
   .namecard .intro {
@@ -526,7 +616,6 @@ body {
   .namecard .intro .lineid {
     color:#ff9912
   }
-  
   
   
   .wave {
@@ -766,8 +855,9 @@ body {
   align-items: center;
   justify-content: center;
   padding: 0;
-  margin-bottom: 30px;
   gap: 4px; /* 使用 gap 來控制間距，更均勻 */
+  margin: 0 auto;
+  margin-bottom: 1%;
 }
 
 .card-social a {
@@ -813,5 +903,5 @@ body {
   height: 16px;
   display: block;
   transition: 0.3s;
-  margin: 0; /* 避免 svg 本身有 margin */
+  margin: 0 ; /* 避免 svg 本身有 margin */
 }
