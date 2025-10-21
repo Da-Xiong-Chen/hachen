@@ -493,7 +493,7 @@ body {
   
   .namecard {
     width: 350px;
-    height: 210px;
+    height: 240px;
     padding: 25px;
     margin: auto;
     position: relative;
@@ -504,6 +504,7 @@ body {
     font-weight: bold;
     /* --------------------------------------------------- */
     transition: all 0.5s; /* transition 教課時記得寫完動畫再加上此屬性*/
+    margin-bottom: 60px;
   }
   
   .namecard .name {
