@@ -6,11 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hsin-An-Chen web</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css?v=20261115-1">
     
+    <link rel="stylesheet" href="./css/site-header.css?v=20261113-1">
+    <script src="./site-header.js?v=20261113-1" defer></script>
 </head>
 
-<body>
+<body class="site-page site-home">
 
       <!-- 動畫區塊 -->
        <div id="splash">
@@ -23,32 +25,29 @@
         </center>
        </div>
       <!-- 主頁內容 -->
-           <h1 style="color: #ffffff;">我是大雄<br>林北大雄<br>是個可悲的<br>研究生</h1>
 
-    <div id="mainContent" class="header">
-        <div class="wrapper">
-            <a href="./index.html">
-                <div class="logo"><img src="./images/網頁標頭1125.png" alt="fail to show"></div>
-            </a>
-            <div class="menu-toggle" id="menu-toggle">
-                &#9776; <!-- 漢堡圖標 -->
-            </div>
-            <div class="menu text-right" id="menu">
-                <ul>
-                    <li>
-                        <a href="./resume/resume.html">Myself</a>
-                    </li>
-                    <li>
-                        <a href="./experiences/index.html">About</a>
-                    </li>
-                    <li>
-                        <a href="./contact/index.html">Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="clearfix"></div>
-        </div>
-    </div>
+    <header class="site-header" id="mainContent">
+      <div class="site-header-inner">
+        <a class="site-brand" href="./index.html" aria-label="陳信安的個人網站，回首頁">
+          <span class="site-brand-mark" aria-hidden="true">HC</span>
+          <span class="site-brand-copy">
+            <span class="site-brand-name" lang="en">HSIN-AN CHEN</span>
+            <span class="site-brand-caption">陳信安的個人網站</span>
+          </span>
+        </a>
+        <button class="site-menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="開啟導覽選單" hidden>
+          <span class="site-menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="主要導覽">
+          <ul class="site-nav-list">
+            <li><a class="site-nav-link" href="./index.html" aria-current="page">Home</a></li>
+            <li><a class="site-nav-link" href="./resume/resume.html">Myself</a></li>
+            <li><a class="site-nav-link" href="./experiences/index.html">About</a></li>
+            <li><a class="site-nav-link site-nav-contact" href="./contact/index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
     <!--About section starts here-->
     <!-- <h1 style="color: #ffffff;">我是大雄<br>林北大雄<br>是個可悲的<br>研究生</h1> -->
@@ -137,7 +136,7 @@
     
 
    
-      <script src="./app.js"></script>
+      <script src="./app.js?v=20261113-1"></script>
 
 
 </body>

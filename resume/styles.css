@@ -2,7 +2,6 @@
 * {
   vertical-align: top;
   box-sizing: border-box;
-  background-color: #f2f2e9;
   color: #24260f;
   font-family: lato, sans-serif;
   font-weight: 300;
@@ -14,6 +13,163 @@ html, body {
   margin: 0px;
   padding: 0px;
   width: 100%;
+}
+
+body {
+  background-color: #f2f2e9;
+}
+
+/* 個人履歷頁首 */
+.resume-header {
+  background-color: #24260f;
+  border-bottom: 1px solid #59613b;
+}
+
+.resume-header,
+.resume-header * {
+  font-family: "Segoe UI", "Microsoft JhengHei", sans-serif;
+  transition: none;
+}
+
+.resume-header-inner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+  max-width: 1027px;
+  margin: 0 auto;
+  padding: 36px 30px;
+}
+
+.resume-avatar {
+  flex: 0 0 148px;
+  width: 148px;
+  height: 148px;
+  overflow: hidden;
+  border-radius: 24px;
+  background-color: #59613b;
+}
+
+.resume-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 0;
+  object-fit: cover;
+  object-position: center 36%;
+  transform: scale(1.65);
+  transform-origin: center 36%;
+}
+
+.resume-intro {
+  min-width: 0;
+}
+
+.resume-role {
+  margin: 0 0 6px;
+  color: #c1d7ae;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+}
+
+.resume-intro h1 {
+  margin: 0;
+  color: #f2f2e9;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 0.08em;
+}
+
+.resume-name-en {
+  margin: 6px 0 0;
+  color: #d7dac4;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.14em;
+}
+
+.resume-affiliation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 14px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.resume-affiliation span {
+  color: #e4e6d8;
+  font-weight: 400;
+  line-height: inherit;
+}
+
+.resume-affiliation span + span::before {
+  content: "／";
+  margin-right: 8px;
+  color: #90a955;
+}
+
+@media (max-width: 560px) {
+  .resume-header-inner {
+    gap: 20px;
+    padding: 28px 20px;
+  }
+
+  .resume-avatar {
+    flex-basis: 112px;
+    width: 112px;
+    height: 132px;
+    border-radius: 20px;
+  }
+
+  .resume-intro h1 {
+    font-size: 32px;
+  }
+
+  .resume-role {
+    font-size: 13px;
+  }
+
+  .resume-name-en {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+
+  .resume-affiliation {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+
+  .resume-affiliation span {
+    display: block;
+  }
+
+  .resume-affiliation span + span::before {
+    display: none;
+  }
+}
+
+@media (max-width: 380px) {
+  .resume-header-inner {
+    gap: 16px;
+    padding: 26px 18px;
+  }
+
+  .resume-avatar {
+    flex-basis: 88px;
+    width: 88px;
+    height: 116px;
+    border-radius: 18px;
+  }
+
+  .resume-intro h1 {
+    font-size: 30px;
+  }
 }
 
 /* 頂部區域 */
@@ -391,8 +547,8 @@ img {
   top: 10px;
 }
 
-/* 響應式 <768px */
-@media (max-width: 768px) {
+/* 響應式：容器寬度不足時改為單欄 */
+@media (max-width: 1027px) {
   /* 頂部區域 */
   .top {
     height: auto;
@@ -548,7 +704,7 @@ img {
   }
 
   /* 讓右側內容緊跟橫向排列 */
-  .ed-con-right {
+  .ex-con-right, .ed-con-right {
     display: block;
     width: 100%;
     margin-top: 15px;

@@ -905,3 +905,8 @@ body {
   transition: 0.3s;
   margin: 0 ; /* 避免 svg 本身有 margin */
 }
+
+/* 首頁底部留白 */
+body.site-page.site-home {
+  padding-bottom: 48px;
+}

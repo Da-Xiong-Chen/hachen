@@ -5,27 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../css/site-header.css?v=20261113-1">
+    <script src="../site-header.js?v=20261113-1" defer></script>
 </head>
-<body>
-    <header class="static-header">
-	<img src="../images/網頁標頭1125.png" height="40" height="auto"/>
-	<nav>
-		<a href="../resume/resume.html">Myself</a>
-		<a href="./index.html">About</a>
-		<a href="../contact/index.html">Contact</a>
-	</nav>
-</header>
-<header class="fixed-header">
-	<div class="fheader__container">
-		<img src="../images/網頁標頭1125.png" width="30px" height="auto"/>
-		<nav>
-			<a href="../resume/resume.html">Myself</a>
-		    <a href="./index.html">About</a>
-		    <a href="../contact/index.html">Contact</a>
-		</nav>
-	</div>
-</header>
+<body class="site-page site-about">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="site-brand" href="../index.html" aria-label="陳信安的個人網站，回首頁">
+          <span class="site-brand-mark" aria-hidden="true">HC</span>
+          <span class="site-brand-copy">
+            <span class="site-brand-name" lang="en">HSIN-AN CHEN</span>
+            <span class="site-brand-caption">陳信安的個人網站</span>
+          </span>
+        </a>
+        <button class="site-menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="開啟導覽選單" hidden>
+          <span class="site-menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="主要導覽">
+          <ul class="site-nav-list">
+            <li><a class="site-nav-link" href="../index.html">Home</a></li>
+            <li><a class="site-nav-link" href="../resume/resume.html">Myself</a></li>
+            <li><a class="site-nav-link" href="../experiences/index.html" aria-current="page">About</a></li>
+            <li><a class="site-nav-link site-nav-contact" href="../contact/index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
 <div class="container__content">
 	<div id="section1" class="section1">
         <a href="../1/web.html">
@@ -71,6 +77,5 @@
 <footer>
 
 </footer>
-<script src="./app.js"></script>
 </body>
 </html>

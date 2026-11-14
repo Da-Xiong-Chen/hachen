@@ -1,45 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css?v=20261113-header-1">
     <link rel="stylesheet" href="../style.css">
-    <title>Myself</title>
+    <title>個人履歷｜陳信安</title>
+    <link rel="stylesheet" href="../css/site-header.css?v=20261113-1">
+    <script src="../site-header.js?v=20261113-1" defer></script>
 </head>
-<body>
-    <div class="top">
-  <div class="top-content">
-    <!-- 照片開始 -->
-    <div class="photo">
-      <img src="../images/img.png" alt="photo">
-      <h1>CHEN HSIN-AN</h1>
-    </div>
-    <!-- 照片結束 -->
+<body class="site-page site-resume">
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="site-brand" href="../index.html" aria-label="陳信安的個人網站，回首頁">
+          <span class="site-brand-mark" aria-hidden="true">HC</span>
+          <span class="site-brand-copy">
+            <span class="site-brand-name" lang="en">HSIN-AN CHEN</span>
+            <span class="site-brand-caption">陳信安的個人網站</span>
+          </span>
+        </a>
+        <button class="site-menu-toggle" type="button" aria-controls="site-navigation" aria-expanded="false" aria-label="開啟導覽選單" hidden>
+          <span class="site-menu-icon" aria-hidden="true"></span>
+        </button>
+        <nav class="site-nav" id="site-navigation" aria-label="主要導覽">
+          <ul class="site-nav-list">
+            <li><a class="site-nav-link" href="../index.html">Home</a></li>
+            <li><a class="site-nav-link" href="../resume/resume.html" aria-current="page">Myself</a></li>
+            <li><a class="site-nav-link" href="../experiences/index.html">About</a></li>
+            <li><a class="site-nav-link site-nav-contact" href="../contact/index.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <!-- 聯絡資訊開始 -->
-    <div class="info">
-      <div class="title">Master's Students&</br>Web Developing Learner</div>
-      <!-- <div class="contact">
-        <div class="url">
-          <a href="https://www.facebook.com/ianchen0419" target="_blank">
-            <i class="fa fa-facebook-official" style="font-size:36px;color:#90A955;background-color:#24260f;"></i>
-          </a>
-          <span>fb.me/ianchen0419</span>
+    <header class="resume-header">
+      <div class="resume-header-inner">
+        <div class="resume-avatar">
+          <img src="../images/img.png" alt="陳信安的個人照片" width="148" height="148">
         </div>
-        <div class="url">
-          <i class="fa fa-skype" style="font-size:36px;color:#90A955;background-color: #24260f;"></i>
-          <span>ianchen0419</span>
+        <div class="resume-intro">
+          <p class="resume-role" lang="en">Master's Student</p>
+          <h1>陳信安</h1>
+          <p class="resume-name-en" lang="en">HSIN-AN CHEN</p>
+          <p class="resume-affiliation">
+            <span>國立臺北商業大學</span>
+            <span>資訊管理系</span>
+          </p>
         </div>
-        <div class="url">
-          <i class="fa fa-envelope-o" style="font-size:36px;color:#90A955;background-color: #24260f;"></i>
-          <span>ianchen0419@gmail.com</span>
-        </div>
-      </div> -->
-    </div>
-    <!-- 聯絡資訊結束 -->
-  </div>
-</div>
+      </div>
+    </header>
 
 <!-- 內容開始 -->
 <div class="content">
@@ -49,19 +58,18 @@
 
             <!-- 學歷開始 -->
       <div class="education">
-        <div class="con-title ed-title">EDUCATION</div>
+        <div class="con-title ed-title">學歷</div>
         <div class="ed-content">
           <div class="ed-con-left">
             <div class="dot"></div>
             <div class="vertical-line"></div>
           </div>
           <div class="ed-con-right">
-            <h3>Bachelor:<br>Computer Science and Information Engineering</h3>
-            <h5>Tamkang University <span></span></h5>
+            <h3>學士：<br>資訊工程學系</h3>
+            <h5>淡江大學 <span></span></h5>
             <p>
-              Study Field:<br>
-              Programming, Web Design, Medical Imaging, Database, Artificial Intelligence, 
-              Machine Learning, Deep learning.
+              大學專題：<br>
+              基於YOLO模型偵測青光眼醫療影像辨識
             </p>
           </div>
         </div>
@@ -71,12 +79,11 @@
             <div class="vertical-line"></div>
           </div>
           <div class="ed-con-right">
-            <h3>Master's:<br>Information Management</h3>
-            <h5>National Taipei University of Business<span></span></h5>
+            <h3>碩士：<br>資訊管理系</h3>
+            <h5>國立臺北商業大學<span></span></h5>
             <p>
-              Study Field:<br>
-              Artificial Intelligence, Machine Learning, Deep learning,
-              Image Processing, Cloud Computing.
+              碩士論文題目：<br>
+              結合兩階層PBCNN、任務導向RAG與大型語言模型之自動化網路防禦架構
             </p>
           </div>
         </div>
@@ -160,7 +167,7 @@
       <!-- 工作經歷結束 -->
       <!-- 技能開始 -->
       <div class="skills">
-        <div class="con-title sk-title">SKILLS</div>
+        <div class="con-title sk-title">專業技能</div>
         <div class="skill-content">
           <div class="skill-con-left">
             <div class="skill-bar">
