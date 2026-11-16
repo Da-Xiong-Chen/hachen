@@ -910,3 +910,58 @@ body {
 body.site-page.site-home {
   padding-bottom: 48px;
 }
+
+/* 窄螢幕名片：四周保留 48px */
+@media (max-width: 520px) {
+  .site-home > .card-social {
+    margin-bottom: 0;
+  }
+
+  .site-home > .namecard {
+    box-sizing: border-box;
+    width: calc(100% - 96px);
+    height: auto;
+    min-height: 310px;
+    margin: 48px auto 0;
+    transition: none;
+  }
+
+  .site-home .namecard .intro {
+    padding-right: 0;
+  }
+
+  .site-home .namecard > :not(.wave) {
+    position: relative;
+    z-index: 1;
+  }
+
+  .site-home .namecard .wave {
+    top: -160px;
+    right: -660px;
+    bottom: -160px;
+    left: auto;
+    height: auto;
+    margin: 0;
+    opacity: 0.18;
+    animation: none;
+    transform: none;
+  }
+
+  .site-home .namecard .wave.-two {
+    right: -640px;
+    opacity: 0.1;
+  }
+
+  .site-home .namecard .wave.-three {
+    right: -650px;
+    opacity: 0.12;
+  }
+
+  .site-home .namecard:hover {
+    transform: none;
+  }
+
+  .site-home .namecard:hover .wave.right {
+    left: auto;
+  }
+}
