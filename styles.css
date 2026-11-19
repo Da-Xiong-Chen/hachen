@@ -937,24 +937,28 @@ body.site-page.site-home {
 
   .site-home .namecard .wave {
     top: -160px;
-    right: -660px;
+    right: calc(-700px + 22%);
     bottom: -160px;
     left: auto;
     height: auto;
     margin: 0;
-    opacity: 0.18;
-    animation: none;
+    opacity: 0.45;
+    animation: mobile-card-wave 7s ease-in-out infinite alternate;
     transform: none;
   }
 
   .site-home .namecard .wave.-two {
-    right: -640px;
-    opacity: 0.1;
+    right: calc(-700px + 29%);
+    opacity: 0.16;
+    animation-duration: 9s;
+    animation-delay: -3s;
   }
 
   .site-home .namecard .wave.-three {
-    right: -650px;
-    opacity: 0.12;
+    right: calc(-700px + 25%);
+    opacity: 0.28;
+    animation-duration: 11s;
+    animation-delay: -6s;
   }
 
   .site-home .namecard:hover {
@@ -963,5 +967,16 @@ body.site-page.site-home {
 
   .site-home .namecard:hover .wave.right {
     left: auto;
+  }
+}
+
+@keyframes mobile-card-wave {
+  from { transform: translateX(0); }
+  to { transform: translateX(-8px); }
+}
+
+@media (max-width: 520px) and (prefers-reduced-motion: reduce) {
+  .site-home .namecard .wave {
+    animation: none;
   }
 }
