@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="透過Email或工作室名片聯絡大雄，討論網站需求、預算與帳號服務。">
+  <title>聯絡方式｜大雄工作室</title>
+  <link rel="stylesheet" href="studio.css?v=20261124-2">
+  <script src="contact.js?v=20261124-1" defer></script>
+</head>
+<body class="site-page site-studio">
+  <a class="skip-link" href="#main-content">跳到主要內容</a>
+  <header class="studio-header">
+    <nav class="studio-subnav" aria-label="大雄工作室導覽">
+      <a class="studio-wordmark" href="index.html">大雄工作室<span lang="en">DA-XIONG STUDIO</span></a>
+      <ul>
+          <li><a href="index.html">首頁</a></li>
+          <li><a href="services.html">商品介紹</a></li>
+          <li><a href="about.html">關於大雄</a></li>
+          <li><a href="contact.html" aria-current="page">聯絡方式</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main-content" class="studio-shell">
+    <section class="page-intro" aria-labelledby="contact-studio-title">
+      <p class="eyebrow" lang="en">CONTACT US</p>
+      <h1 id="contact-studio-title">聯絡大雄</h1>
+      <p class="lead">如果想獲得更多資訊，歡迎寄送 Email，或透過下面的名片加入我的 LINE。</p>
+    </section>
+
+    <section class="section contact-layout" aria-label="聯絡方式與需求洽詢">
+      <div class="reading" id="email">
+        <h2>一起聊聊你的需求</h2>
+        <a class="email-link" href="mailto:fox.n1123@gmail.com">fox.n1123@gmail.com</a>
+        <p>大雄工作室以網路接案為主，沒有實體店面。</p>
+        <div class="contact-links"><a class="button button-secondary" href="https://da-xiong-studio-business-card.vercel.app/Da-Xiong%20studio/index.html" target="_blank" rel="noopener noreferrer">8591 買賣帳號名片</a><a class="button button-secondary" href="https://da-xiong-studio-business-card.vercel.app/Da-Xiong%20studio%20web/index.html" target="_blank" rel="noopener noreferrer">網站製作名片</a></div>
+        <p class="note">手機開啟名片時，可將手機轉成橫向瀏覽。</p>
+      </div>
+      <form class="contact-form" id="studio-inquiry" action="mailto:fox.n1123@gmail.com" method="get" enctype="text/plain">
+        <h2>想要的需求及預算</h2>
+        <p>留下名字、聯絡信箱，以及想討論的內容。</p>
+        <label for="inquiry-name">名字 <span>必填</span></label>
+        <input id="inquiry-name" name="name" type="text" autocomplete="name" required>
+        <label for="inquiry-email">Email <span>必填</span></label>
+        <input id="inquiry-email" name="email" type="email" autocomplete="email" required>
+        <label for="inquiry-requirements">想要的需求及預算 <span>必填</span></label>
+        <textarea id="inquiry-requirements" name="requirements" rows="5" required></textarea>
+        <button class="button" type="submit">開啟 Email 寄送</button>
+        <p class="note">會開啟你的郵件程式，帶入以上內容；確認後再寄出。</p>
+        <noscript><p class="note">也可以直接寄信至 <a href="mailto:fox.n1123@gmail.com">fox.n1123@gmail.com</a>，附上你的名字、需求及預算。</p></noscript>
+      </form>
+    </section>
+
+  </main>
+  <footer class="studio-footer"><div><strong lang="en">DA-XIONG STUDIO</strong><p>本網站著作權屬於大雄工作室<br>網頁維護人員：陳信安</p></div><a href="../home.html">回到個人首頁</a></footer>
+</body>
+</html>

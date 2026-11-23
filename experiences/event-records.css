@@ -1,0 +1,49 @@
+/* Shared layout for certificate-based activity and academic records. */
+.record-main { overflow-wrap: anywhere; }
+.record-main .event-header { max-width: 900px; }
+.record-main .event-header h1 { max-width: 880px; }
+.record-main .event-official-name { color: var(--about-green); }
+.record-main .event-lead { max-width: 780px; }
+.record-summary { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 40px; padding: 36px; border: 1px solid #d2dcc7; border-radius: 16px; background: #eaf0e2; }
+.record-result, .record-info { min-width: 0; }
+.record-main .record-result .eyebrow { font-size: 13px; }
+.record-main .record-result h2 { margin-top: 8px; font-size: clamp(28px, 3.2vw, 38px); line-height: 1.45; }
+.record-main .record-description-label { margin-top: 25px; margin-bottom: 7px; color: var(--about-green); font-size: 13px; font-weight: 650; }
+.record-main .record-description { max-width: 600px; font-size: 18px; line-height: 1.9; }
+.record-info { padding-left: 30px; border-left: 1px solid #cad6bd; }
+.record-main .record-info-title { margin-bottom: 18px; font-size: 18px; }
+.record-facts { display: grid; gap: 13px; margin: 0; }
+.record-facts > div { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 14px; }
+.record-facts dt { color: var(--about-muted); font-size: 14px; }
+.record-facts dd { margin: 0; font-size: 15px; font-weight: 600; }
+.record-main .record-date-note { margin-top: 18px; color: var(--about-muted); font-size: 13px; line-height: 1.8; }
+.record-photo-single { grid-template-columns: minmax(0, 1fr); max-width: 620px; margin-inline: auto; }
+.record-gallery .event-photo-link { padding: 10px; border: 1px solid var(--about-line); background: #eeeee6; }
+.record-gallery .event-photo-link img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: contain; border-radius: 6px; }
+.record-main .record-gallery h3 { font-size: 20px; }
+
+@media (max-width: 850px) {
+  .record-summary { gap: 26px; padding: 30px; }
+  .record-info { padding-left: 24px; }
+  .record-facts > div { grid-template-columns: 64px minmax(0, 1fr); gap: 10px; }
+}
+@media (max-width: 680px) {
+  .record-summary { grid-template-columns: minmax(0, 1fr); }
+  .record-info { padding-left: 0; padding-top: 22px; border-left: 0; border-top: 1px solid #cad6bd; }
+  .record-main .record-info-title { margin-bottom: 15px; }
+  .record-main .record-description-label { margin-top: 19px; }
+  .record-gallery .event-photo-grid { grid-template-columns: minmax(0, 1fr); gap: 30px; }
+  .record-gallery .section-heading { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+@media (max-width: 560px) {
+  .record-summary { padding: 24px; gap: 22px; }
+  .record-main .record-result h2 { font-size: 29px; }
+  .record-main .record-description { font-size: 17px; }
+  .record-main .event-official-name { font-size: 17px; }
+  .record-gallery .event-photo-link { padding: 7px; }
+  .record-main .event-breadcrumb { gap: 8px; flex-wrap: wrap; font-size: 13px; }
+}
+@media (max-width: 360px) {
+  .record-summary { padding: 20px; }
+  .record-facts > div { grid-template-columns: minmax(0, 1fr); gap: 1px; }
+}

@@ -1,0 +1,65 @@
+.activity-feature-list {
+  display: grid;
+  gap: 24px;
+}
+
+.activity-feature-list .activity-feature {
+  min-width: 0;
+}
+
+.activity-feature-photo.activity-certificate-photo {
+  display: grid;
+  place-items: center;
+  padding: 16px;
+  background: #e9eee2;
+}
+
+.activity-feature-photo.activity-certificate-photo img {
+  width: 100%;
+  height: 238px;
+  object-fit: contain;
+  object-position: center;
+}
+
+.about-main .activity-feature-label {
+  flex-wrap: wrap;
+}
+
+.activity-feature-result {
+  display: block;
+  margin-bottom: 8px;
+  color: #e2edcf;
+  font-weight: 650;
+}
+
+.academic-records-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 36px 0 18px;
+}
+
+.about-main .academic-records-heading h3 {
+  font-size: 23px;
+}
+
+.academic-records-heading p {
+  color: var(--about-muted);
+  font-size: 15px;
+}
+
+@media (max-width: 700px) {
+  .academic-records-heading {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .activity-feature-photo.activity-certificate-photo img {
+    height: 188px;
+  }
+}
